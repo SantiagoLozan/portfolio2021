@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--
+    <h3>Formularios</h3>
+    <p>Los formularios nos permiten enviar datos del navegador al servidor</p>
+    <p>Se encargan de contener principalmente a:</p>
+    <ul>
+        <li>inputs</li>
+        <li>buttons</li>
+    </ul>
+ 
+           !--->
+        <!--
+        <h4>Inputs</h4>
+        <h5>Ingreso de texto</h5>
+        <label for="texto">Texto: </label>
+        <input type="text" id="texto" name="name"  minlength="4" maxlength="8" size="10">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        !--->
+        <h5>Suma de dos Numeros</h5>
+        <h6>Primer Numero</h6>
+        <label for="numero">Numero: </label>
+        <input type="number" id="numero1" name="numero">
+        <h6>Segundo Numero</h6>
+        <label for="numero">Numero: </label>
+        <input tpye="number" id="numero2" name="numero2">
+
+        <!-- <h5>Ingreso de fechas</h5>
+        <label for="date">Fecha</label>
+        <input type="date" id="date" name="date">
+        <h5>Ingreso de archivos</h5>
+        <label for="file">Archivo:</label>
+        <input type="file" id="file" name="file" accept="image/png, image/jpeg">
+        <h5>Ingreso de color</h5>
+        <label for="color">Color: </label>
+        <input type="color" id="color" name="color">
+        <h4>Buttons</h4>
+        <p>En realidad se pueden usar a, button o input. Acá solo veremos button</p>
+        <button class="favorite styled" type="submit" onclick="">Boton</button>
+        !--->
+
+         <h5>Boton para sumar los 2 números</h5>
+        <button onclick="sumar()">Suma</button>
+        <script>
+            function sumar() {
+                //asi la hace lein
+            //suma = parseInt(document.getElementById("numero1").value) + parseInt(document.getElementById("numero2").value);
+            //alert(suma);
+                // la del santi corregida
+            var numero1, numero2, suma, text;
+            var numero1 = parseInt(document.getElementById("numero1").value);
+            var numero2 = parseInt(document.getElementById("numero2").value);
+            var suma = numero1 + numero2;
+            alert ("La suma es : " + suma );
+
+            /*var numero1, numero2, suma, text
+            var numero1 = parseInt.document.getElementById("numero1").value);
+            var numero2 = parseInt.document.getElementById("numero2").value);
+            var suma = parseInt(numero1) + parseInt(numero2).value;
+            alert ("La suma es : " +suma );*/
+            }
+        </script>
+        
+        <!--
+        <h5>Definicion de otra función o rutina</h5>
+        <label for="mult2">El doble del numero es: </label>
+        <input type="number" id="mult2">
+        <button onclick="Rutina2()">Accion 2</button>
+        <script>
+            function Rutina2() {
+                document.getElementById("mult2").value = document.getElementById("numero").value * 2
+            }
+        </script>
+
+        <h5>One more time... definicion de otra función o rutina</h5>
+        <label for="enumerar">Enumerar elementos hasta: </label>
+        <input type="number" id="enumerar">
+        <button onclick="Rutina3()">Accion 3</button>
+        <ul id="lista-dinamica"></ul>
+        <script>
+            function Rutina3() {
+                let cant= document.getElementById("enumerar").value;
+
+                for(var i = 0; i < cant; i++){ 
+                    // Muestra la "evolucion" de la variable i a lo largo del ciclo
+                    console.log(i)
+
+                    // elemento donde vamos a incorporar los <li>
+                    var lista = document.getElementById("lista-dinamica");
+                    // Creamos el <li>
+                    var li = document.createElement("li");
+                    // Agregamos numero de la iteracion al <li>
+    
+                    !--->
+    <br>
+    <br>
+    <br>
+    <br>
+    <button><a href="index.html">Boton para volver al Portfolio</a></button>
+    
